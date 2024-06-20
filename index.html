@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <title>Willrise.uz</title>
+</head>
+
+<body>
+  <header class="header" id="home">
+    <nav class="nav">
+      <input type="checkbox" id="check">
+      <div class="container">
+        <div class="nav_box">
+          <a href="#home" class="logo">
+            <img src="./assets/images/logo.png" alt="">
+          </a>
+          <label class="open_btn" for="check"><i class="  fa fa-bars"></i></label>
+          <ul class="nav_list">
+            <label class="close_btn"><i class="fa fa-close"></i></label>
+            <li><a href="about.html" class="nav_link lang" key="about"></a></li>
+            <li class="nav_item">
+              <div class="nav_item_card">
+                <a href="#!" class="nav_link dropdown_toggle lang" key="category"></a>
+                <div class="dropdown_content">
+                  <a class="nav_link2 lang" key="category1" href="#category"></a>
+                  <a class="nav_link2 lang" key="category2" href="#category"></a>
+                  <a class="nav_link2 lang" key="category3" href="#category"></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav_item">
+              <div class="nav_item_card">
+                <a href="#!" class="nav_link dropdown_toggle lang" key="product"></a>
+                <div class="dropdown_content">
+                  <a class="nav_link2 lang" key="product1" href="#product"></a>
+                  <a class="nav_link2 lang" key="product2" href="#product"></a>
+                  <a class="nav_link2 lang" key="product3" href="#product"></a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#comand" class="nav_link lang" key="comand"></a></li>
+            <li><a href="#news" class="nav_link lang" key="news"></a></li>
+            <div class="language-selector">
+              <div class="selector_box" onclick="toggleDropdown(event)">
+                <div class="selected lang-button" data-lang="ru">RU</div>
+                <label class="globe" for=""><i class="fa fa-globe"></i></label>
+              </div>
+              <div class="options" id="languageOptions" style="display: none;">
+                <div class="option lang-button" data-lang="en">EN</div>
+                <div class="option lang-button" data-lang="uz">UZ</div>
+              </div>
+            </div>
+            <a href="tel:+998935377330" class="nav_contact lang" key="contact"></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-carousel" id="home">
+      <div class="carousel">
+        <div class="items">
+          <div class="img_card carousel-image current">
+            <img src="assets/images/bg-2.png" alt="" class=" " />
+            <div class="img_text">
+              <h3 class="lang" key="navimage1"> </h3>
+            </div>
+          </div>
+          <div class="img_card carousel-image ">
+            <img src="assets/images/bg-1.jpg" alt="" class=" " />
+            <div class="img_text">
+              <h3 class="lang" key="navimage2"></h3>
+            </div>
+          </div>
+          <div class="img_card carousel-image ">
+            <img src="assets/images/bg-3.jpg" alt="" class=" " />
+            <div class="img_text">
+              <h3 class="lang" key="navimage3"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <i class="fa fa-chevron-left fa-3x" id="prevBtn"></i>
+        <i class="fa fa-chevron-right fa-3x" id="nextBtn"></i>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about_box">
+          <div class="about_card1">
+            <h2 class="about_title lang" key="about"></h2>
+            <img class="about_img" src="./assets/images/about.png" alt="">
+          </div>
+          <div class="about_card2">
+            <p class="about_text1 lang " key="about_text1"></p>
+            <p class="about_text2 lang" key="about_text2"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about_bottom"></section>
+    <section class="category" id="category">
+      <div class="container">
+        <div class="title_card">
+          <h2 class="title lang" key="category"></h2>
+          <a class="link" href="all_category.html"><span class="lang" key="link"></span><img
+              src="./assets/images/prev.svg" alt=""></a>
+        </div>
+        <div class="category_box">
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category1.png" alt="">
+            <p class="category_text lang" key="category_text1"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category2.png" alt="">
+            <p class="category_text lang" key="category_text2"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category3.png" alt="">
+            <p class="category_text lang" key="category_text3"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category4.png" alt="">
+            <p class="category_text lang" key="category_text4"> </p>
+          </a>
+          <a class="link1" href="all_category.html"><span class="lang" key="link"></span><img
+              src="./assets/images/prev.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="product">
+      <div class="container">
+        <h2 class="title lang" key="product"></h2>
+        <div class="catalog_box">
+          <div class="catalog_card aos-init" data-aos="zoom-in-up">
+            <img class="catalog_img" src="./assets/images/catalog1.png" alt="">
+            <p class="catalog_subtitle lang" key="product_title"></p>
+            <p class="catalog_text lang" key="product_text"></p>
+            <a href="product.html" class="catalog_link lang" key="product_link"></a>
+          </div>
+          <div class="catalog_card aos-init" data-aos="zoom-in-up">
+            <img class="catalog_img" src="./assets/images/catalog1.png" alt="">
+            <p class="catalog_subtitle lang" key="product_title"></p>
+            <p class="catalog_text lang" key="product_text"></p>
+            <a href="product.html" class="catalog_link lang" key="product_link"></a>
+          </div>
+          <div class="catalog_card aos-init" data-aos="zoom-in-up">
+            <img class="catalog_img" src="./assets/images/catalog1.png" alt="">
+            <p class="catalog_subtitle lang" key="product_title"></p>
+            <p class="catalog_text lang" key="product_text"></p>
+            <a href="product.html" class="catalog_link lang" key="product_link"></a>
+          </div>
+          <a class="c_link" href="all_product.html"><span class="lang" key="link"></span><img
+              src="./assets/images/prev.svg" alt=""></a>
+
+        </div>
+      </div>
+    </section>
+    <section class="specialist" id="comand">
+      <h2 class="specialist_title lang" key="comand"></h2>
+      <div class="specialist_box">
+        <div class="specialist_card">
+          <img class="specialist_img" src="./assets/images/specialist1.png" alt="">
+          <h4 class="specialist_subtitle lang" key="comand_title1"></h4>
+          <p class="specialist_text lang" key="comand_text1"></p>
+        </div>
+        <div class="specialist_card">
+          <img class="specialist_img" src="./assets/images/specialist2.png" alt="">
+          <h4 class="specialist_subtitle lang" key="comand_title2"></h4>
+          <p class="specialist_text lang" key="comand_text2"></p>
+        </div>
+        <div class="specialist_card">
+          <img class="specialist_img" src="./assets/images/specialist3.png" alt="">
+          <h4 class="specialist_subtitle lang" key="comand_title3"></h4>
+          <p class="specialist_text lang" key="comand_text3">
+          </p>
+        </div>
+        <div class="specialist_card">
+          <img class="specialist_img" src="./assets/images/specialist4.png" alt="">
+          <h4 class="specialist_subtitle lang" key="comand_title4">Хирург</h4>
+          <p class="specialist_text lang" key="comand_text4"></p>
+        </div>
+        <div class="specialist_card">
+          <img class="specialist_img" src="./assets/images/specialist5.png" alt="">
+          <h4 class="specialist_subtitle lang" key="comand_title5"></h4>
+          <p class="specialist_text lang" key="comand_text5"></p>
+        </div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="container">
+        <div class="news_link_card">
+          <h2 class="news_title lang" key="news1"></h2>
+          <a class="news_link" href="all_news.html"><span class="lang" key="link"></span><img
+              src="./assets/images/prev.svg" alt=""></a>
+        </div>
+        <div class="news_box">
+          <a href="news.html" class="news_card">
+            <img class="news_img" src="./assets/images/news1.png" alt="">
+            <div class="news_date ">
+              <p class="news_date_text lang" key="news_date1"></p>
+              <span> </span>
+              <p class="news_date_text lang" key="news_date1.2"></p>
+            </div>
+            <p class="news_subtitle lang" key="news_title1"></p>
+            <p class="news_text lang" key="new_text1"></p>
+          </a>
+          <a href="news.html" class="news_card">
+            <img class="news_img" src="./assets/images/news2.png" alt="">
+            <div class="news_date ">
+              <p class="news_date_text lang" key="news_date2"></p>
+              <span> </span>
+              <p class="news_date_text lang" key="news_date2.2"></p>
+            </div>
+            <p class="news_subtitle lang" key="news_title2"></p>
+            <p class="news_text lang" key="new_text2"></p>
+          </a>
+          <a href="news.html" class="news_card">
+            <img class="news_img" src="./assets/images/news3.png" alt="">
+            <div class="news_date ">
+              <p class="news_date_text lang" key="news_date3"></p>
+              <span> </span>
+              <p class="news_date_text lang" key="news_date3.2"></p>
+            </div>
+            <p class="news_subtitle lang" key="news_title3"></p>
+            <p class="news_text lang" key="new_text3"></p>
+          </a>
+          <a href="news.html" class="news_card">
+            <img class="news_img" src="./assets/images/news4.png" alt="">
+            <div class="news_date ">
+              <p class="news_date_text lang" key="news_date4"></p>
+              <span> </span>
+              <p class="news_date_text lang" key="news_date4.2"></p>
+            </div>
+            <p class="news_subtitle lang" key="news_title4"></p>
+            <p class="news_text lang" key="new_text4"></p>
+          </a>
+          <a class="news_link2" href="all_news.html"><span class="lang" key="link"></span><img
+              src="./assets/images/prev.svg" alt=""></a>
+        </div>
+
+      </div>
+    </section>
+    <form id="myForm" class="form">
+      <div class="container">
+        <h2 class="title2 lang" key="form_title"></h2>
+        <p class="subtitle2 lang" key="form_subtitle"></p>
+        <div class="form_box">
+          <div class="form_input">
+            <div class="form_text_card">
+              <p class="form_text lang" key="form_name"></p> <span>*</span>
+            </div>
+            <input class="input" type="text" required>
+          </div>
+          <div class="form_input">
+            <div class="form_text_card">
+              <p class="form_text lang" key="form_phone"></p> <span>*</span>
+            </div>
+            <input class="input" type="number" placeholder="+998 (99) 123-45-67" required>
+          </div>
+          <div class="form_textarea">
+            <div class="form_text_card">
+              <p class="form_text lang" key="form_sms"></p> <span>*</span>
+            </div>
+            <textarea class="textarea" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="form_link lang" key="form_link"></button>
+      </div>
+    </form>
+
+    <section class="map">
+      <h2 class="title2 lang" key="map_title"></h2>
+      <p class="subtitle2 lang" key="map_subtitle"></p>
+      <div class="googlemap-container">
+        <iframe class="googlemap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2821120427075!2d69.34876908416253!3d41.34809207936556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef448edf4fb75%3A0x72cbdbabd7f48e05!2s41%C2%B020'53.1%22N%2069%C2%B021'03.5%22E!5e0!3m2!1sen!2s!4v1651779912384"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_box">
+        <a href="#home" id="home">
+          <img src="./assets/images/logo.png" alt="" class="logo">
+        </a>
+        <div class="footer_card">
+          <h2 class="footer_title lang" key="footer_text1"></h2>
+          <p class="footer_text lang" key="footer_text2"></p>
+        </div>
+        <div class="footer_card">
+          <h2 class="footer_title lang" key="footer_text3"></h2>
+          <a href="tel:+998935377330" class="footer_text lang" key="footer_text4"></a>
+          <a href="#!" class="footer_text lang" key="footer_text5"></a>
+        </div>
+        <div class="footer_card">
+          <h2 class="footer_title lang" key="footer_text6"></h2>
+          <a href="https://t.me/murad_r1" class="footer_link lang" key="telegram"></a>
+          <a href="https://www.instagram.com/" class="footer_link lang" key="instagram"></a>
+          <a href="#!" class="footer_link lang" key="facebook"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer_end">
+    <p>© 2023 Powered by</p>
+    <a href="#!"><img src="./assets/images/logo5.png" alt=""></a>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="lang" key="modal"></p>
+    </div>
+  </div>
+  <script src="./assets/js/select.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/navbar2.js"></script>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/lang.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

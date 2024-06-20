@@ -1,1 +1,1 @@
-# wellrise2
+# wellrise.uz

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/all.category.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>All | Categorys</title>
+</head>
+
+<body>
+  <header class="header" id="home">
+    <nav class="nav">
+      <input type="checkbox" id="check">
+
+      <div class="container">
+        <div class="nav_box">
+          <a href="index.html   " class="logo">
+            <img src="./assets/images/logo.png" alt="">
+          </a>
+          <label class="open_btn" for="check"><i class="  fa fa-bars"></i></label>
+
+          <ul class="nav_list">
+            <label class="close_btn"><i class="fa fa-close"></i></label>
+            <li><a href="about.html" class="nav_link lang" key="about"></a></li>
+            <li class="nav_item">
+              <div class="nav_item_card">
+                <a href="#!" class="nav_link dropdown_toggle lang" key="category"></a>
+                <div class="dropdown_content">
+                  <a class="nav_link2 lang" key="category1" href="category.html"></a>
+                  <a class="nav_link2 lang" key="category2" href="category.html"></a>
+                  <a class="nav_link2 lang" key="category3" href="category.html"></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav_item">
+              <div class="nav_item_card">
+                <a href="#!" class="nav_link dropdown_toggle lang" key="product"></a>
+                <div class="dropdown_content">
+                  <a class="nav_link2 lang" key="product1" href="product.html"></a>
+                  <a class="nav_link2 lang" key="product2" href="product.html"></a>
+                  <a class="nav_link2 lang" key="product3" href="product.html"></a>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="index.html#comand" class="nav_link lang" key="comand"></a></li>
+            <li><a href="all_news.html" class="nav_link lang" key="news"></a></li>
+            <div class="language-selector">
+              <div class="selector_box" onclick="toggleDropdown(event)">
+                <div class="selected lang-button" data-lang="ru">RU</div>
+                <label class="globe" for=""><i class="fa fa-globe"></i></label>
+              </div>
+              <div class="options" id="languageOptions" style="display: none;">
+                <div class="option lang-button" data-lang="en">EN</div>
+                <div class="option lang-button" data-lang="uz">UZ</div>
+              </div>
+            </div>
+
+            <a href="tel:+998935377330" class="nav_contact lang" key="contact"></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-carousel" id="home">
+      <div class="carousel">
+        <div class="items">
+          <div class="img_card carousel-image current">
+            <img src="assets/images/bg-2.png" alt="" class=" " />
+            <div class="img_text">
+              <h3 class="lang" key="category"> </h3>
+            </div>
+          </div>
+
+          <div class="img_card carousel-image ">
+            <img src="assets/images/bg-1.jpg" alt="" class=" " />
+            <div class="img_text">
+              <h3 class="lang" key="category"></h3>
+            </div>
+          </div>
+
+          <div class="img_card carousel-image ">
+            <img src="assets/images/bg-3.jpg" alt="" class=" " />
+            <div class="img_text">
+              <h3 class="lang" key="category"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <i class="fa fa-chevron-left fa-3x" id="prevBtn"></i>
+        <i class="fa fa-chevron-right fa-3x" id="nextBtn"></i>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="category" id="category">
+      <div class="container">
+        <div class="category_box">
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category1.png" alt="">
+            <p class="category_text lang" key="category_text1"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category2.png" alt="">
+            <p class="category_text lang" key="category_text2"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category3.png" alt="">
+            <p class="category_text lang" key="category_text3"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category4.png" alt="">
+            <p class="category_text lang" key="category_text4"> </p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category1.png" alt="">
+            <p class="category_text lang" key="category_text1"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category2.png" alt="">
+            <p class="category_text lang" key="category_text2"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category3.png" alt="">
+            <p class="category_text lang" key="category_text3"></p>
+          </a>
+          <a href="category.html" class="category_card">
+            <img class="category_img" src="./assets/images/category4.png" alt="">
+            <p class="category_text lang" key="category_text4"> </p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <form id="myForm" class="form">
+      <div class="container">
+        <h2 class="title2 lang" key="form_title"></h2>
+        <p class="subtitle2 lang" key="form_subtitle"></p>
+        <div class="form_box">
+          <div class="form_input">
+            <div class="form_text_card">
+              <p class="form_text lang" key="form_name"></p> <span>*</span>
+            </div>
+            <input class="input" type="text" required>
+          </div>
+          <div class="form_input">
+            <div class="form_text_card">
+              <p class="form_text lang" key="form_phone"></p> <span>*</span>
+            </div>
+            <input class="input" type="number" placeholder="+998 (99) 123-45-67" required>
+          </div>
+          <div class="form_textarea">
+            <div class="form_text_card">
+              <p class="form_text lang" key="form_sms"></p> <span>*</span>
+            </div>
+
+            <textarea class="textarea" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="form_link lang" key="form_link"></button>
+      </div>
+    </form>
+  </main>
+  <section class="map">
+    <h2 class="title2 lang" key="map_title"></h2>
+    <p class="subtitle2 lang" key="map_subtitle"></p>
+    <div class="googlemap-container">
+      <iframe class="googlemap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2821120427075!2d69.34876908416253!3d41.34809207936556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef448edf4fb75%3A0x72cbdbabd7f48e05!2s41%C2%B020'53.1%22N%2069%C2%B021'03.5%22E!5e0!3m2!1sen!2s!4v1651779912384"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_box">
+        <a href="#home" id="home">
+          <img src="./assets/images/logo.png" alt="" class="logo">
+        </a>
+        <div class="footer_card">
+          <h2 class="footer_title lang" key="footer_text1"></h2>
+          <p class="footer_text lang" key="footer_text2"></p>
+        </div>
+        <div class="footer_card">
+          <h2 class="footer_title lang" key="footer_text3"></h2>
+          <a href="tel:+998935377330" class="footer_text lang" key="footer_text4"></a>
+          <a href="#!" class="footer_text lang" key="footer_text5"></a>
+        </div>
+        <div class="footer_card">
+          <h2 class="footer_title lang" key="footer_text6"></h2>
+          <a href="https://t.me/murad_r1" class="footer_link lang" key="telegram"></a>
+          <a href="https://www.instagram.com/" class="footer_link lang" key="instagram"></a>
+          <a href="#!" class="footer_link lang" key="facebook"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer_end">
+    <p>© 2023 Powered by</p>
+    <a href="#!"><img src="./assets/images/logo5.png" alt=""></a>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="lang" key="modal"></p>
+    </div>
+  </div>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/navbar2.js"></script>
+  <script src="./assets/js/select.js"></script>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/lang.js"></script>
+
+
+</body>
+
+</html>
