@@ -122,7 +122,7 @@ const langData = {
       "brand11": "Biz hamkorlik qilishdan xursandmiz!", 
       "brand12": "Biz chorvachilik korxonalari, fermer xo'jaliklari va uy xo'jaliklarida hayvonlarning salomatligi va farovonligini ta'minlashga intilamiz. Bizning yuqori malakali jamoamiz hayvonlarning sog'lig'ini yaxshilash uchun zamonaviy texnika va texnologiyalardan foydalanadi. Biz hayvonlarning sog'lig'iga g'amxo'rlik qilish kelajakka g'amxo'rlik qilishiga ishonamiz va shuning uchun biz veterinariya xizmatining eng yuqori standartlarini saqlashga intilamiz.", 
       "brand13": "Veb-sayt", 
-      "": "",
+      "brand7": "Bizga ishonch bildirgan komponiyalar",
       "": "",
   },
   "ru": {
@@ -248,6 +248,7 @@ const langData = {
       "brand11": "Мы рады сотрудничеству!", 
       "brand12": "Мы стремимся к обеспечению здоровья и благополучия животных на животноводческих предприятиях, фермах и в домашних хозяйствах. Наша команда высококвалифицированных специалистов использует современные методы и технологии для улучшения состояния здоровья животных. Мы верим, что забота о здоровье животных — это забота о будущем, и именно поэтому мы стремимся к поддержанию высочайших стандартов ветеринарной помощи.", 
       "brand13": "Веб-сайт", 
+      "brand7": "Компании, которые нам доверяют",
       "": "", 
       "": "", 
   },
@@ -373,6 +374,8 @@ const langData = {
     "brand11": "We are glad to cooperate!", 
     "brand12": "We strive to ensure the health and well-being of animals in livestock enterprises, farms and households. Our team of highly qualified specialists uses modern methods and technologies to improve the health of animals. We believe that taking care of animal health is taking care of the future, and that is why we strive to maintain the highest standards of veterinary care.", 
     "brand13": "Website", 
+    "brand7": "Companies that trust us",
+
     "": "", 
     "": "", 
   }
